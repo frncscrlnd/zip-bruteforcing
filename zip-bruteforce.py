@@ -16,7 +16,7 @@ def main():
             for p in f: 
                 # Attempt to extract the zip file using each password
                 if attempt_extraction(zf, p):
-                    # Handle correct password extract versus incorrect password attempt)
+                    # Handle successful and unsuccessful attempts
                     print("Password has been found")
                     return p
                     exit(0)
